@@ -1,0 +1,7 @@
+shiny>=1.8
+python-dotenv
+garminconnect>=0.3.20
+ollama>=0.6
+pandas
+matplotlib
+faicons
