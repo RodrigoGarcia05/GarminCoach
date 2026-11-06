@@ -52,12 +52,11 @@ ruta vieja. Si prefieres, borra `.venv` y créalo de nuevo con `python3 -m venv 
 
 ## Notas
 
-- **Primer login / MFA:** si tu cuenta tiene verificación en dos pasos, la app abre una ventana para escribir
+- **Primer login / MFA:** si la cuenta tiene verificación en dos pasos, la app abre una ventana para escribir
   el código que te manda Garmin. Después los tokens se guardan en `.garmin_tokens/` y ya no se vuelve a pedir
   usuario, contraseña ni código (duran ~1 año). Puedes borrar la contraseña del `.env` después del primer login.
 - Los datos se guardan en caché 10 minutos; el botón **Actualizar** fuerza una nueva descarga.
 - Si Garmin responde "Too many login attempts", espera unos minutos antes de reintentar.
 - El modelo se precarga al iniciar la app; la primera respuesta puede tardar unos segundos más.
 - `.env` y `.garmin_tokens/` están en `.gitignore`: **no los subas a GitHub**.
-- `app-core.py`, `app-express.py`, `gemini_client.py` y `template.json` son restos de la plantilla del chat con
-  Gemini (copias de `../basic-chat2`); la app nueva no los usa y se pueden borrar.
+
